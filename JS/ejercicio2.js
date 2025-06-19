@@ -5,12 +5,23 @@
 7: Bien
 8-9: Notable
 10: Sobresaliente
+
+Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje de “número erróneo”. Si el número ingresado no es válido mostrar el mensaje “Introduce un número válido”.
+Ejemplo:
+Input: 5
+Input: 50
+Input: hola10
+Output: Suficiente
+Output: Número erróneo
+Output: Introduce un número válido
 */
 
 const nota = Number(prompt("Indicame la nota entre 0 y 10"))
 
-if (isNaN(nota) || nota < 0 || nota > 10) {
-    alert ("El valor ingresado no corresponde a una nota válida. Ingrese un valor correcto:")
+if (isNaN(nota)){
+    alert ("Introduce un número válido")
+} else if (nota < 0 || nota > 10){
+    alert("Número erróneo")
 } else if (nota >= 0 && nota <= 2) {
     alert ("Muy deficiente")
 } else if (nota >= 3 && nota <= 4) {
