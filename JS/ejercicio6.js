@@ -8,7 +8,7 @@
 …….
  */
 
-let numeroIngresado = parseInt(prompt("Ingresá un número entre 1 y 30 para generar la pirámide 🗻"))
+const numeroIngresado = parseInt(prompt("Ingresá un número entre 1 y 30 para generar la pirámide 🗻"))
 
 if (isNaN(numeroIngresado) || numeroIngresado < 1 || numeroIngresado > 30){
     alert ("Tenes que ingresar un número entre 1 y 30")
